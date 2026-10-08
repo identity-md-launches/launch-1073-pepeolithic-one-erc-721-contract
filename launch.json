@@ -1,0 +1,27 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "Pepeolithic",
+      "constructorArgs": [
+        "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+        "0x433c8a73bec1273561e4e2201649de12f20b7d58",
+        "0x047F606fD5b2BaA5f5C6c4aB8958E45CB6B054B7",
+        "0xbe96ac9140fa07013148f2dd158576ae6cbe2b4a0ce4be64782b37acc9ad0e1b",
+        "1791810000",
+        "86400",
+        "3600",
+        "1000000000000000000000000",
+        "10000000000000000000000",
+        "0x706570656f6c69746869632d626173652d6e61696a0000000000000000000000",
+        "0x706570656f6c69746869632d6d6f73732d6e61696a0000000000000000000000",
+        "0x706570656f6c69746869632d77617465722d6e61696a00000000000000000000",
+        "0x706570656f6c69746869632d6963652d6e61696a000000000000000000000000",
+        "0x706570656f6c69746869632d6c6176612d6e61696a0000000000000000000000",
+        "0x706570656f6c69746869632d6372797374616c2d6e61696a0000000000000000",
+        "0x706570656f6c69746869632d726f6f74732d6e61696a00000000000000000000"
+      ]
+    }
+  ],
+  "notes": "Ethereum mainnet (chain ID 1). One application; existing ZTO with 18 decimals. Sixteen static constructor arguments: coin, admin, adam, seatRoot, startTime, caveLength, roundLength, firstPrice, floorPrice, then seven right-zero-padded ASCII bytes32 labels in cave order. Dead is the fixed constant 0x000000000000000000000000000000000000dEaD. Nonpayable constructor makes no external calls and mints 0 to Adam and 736 to admin. No initialization or funding. Payments go directly from buyers to dead. No owner, pause, upgrade or recovery. Chain selection belongs to the deployment service; this repository does not broadcast."
+}
